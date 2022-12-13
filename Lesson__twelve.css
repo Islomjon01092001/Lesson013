@@ -1,0 +1,473 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.boxes
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #ac29f9, #4aa4ff);
+    padding: 95px 0;
+}
+.box
+{
+    position: relative;
+    width: 350px;
+    height: 505px;
+    margin: auto;
+}
+.box__one
+{
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 505px;
+    margin: auto;
+    background: #fff3;
+    border-radius: 15px;
+    text-align: center;
+}
+.login
+{
+    font-size: 25px;
+    font-weight: 1000;
+    padding: 20px 0;
+    animation: login 9s linear infinite;
+}
+@keyframes login {
+   0%{
+    transform: translateX(0);
+    color: dodgerblue;
+   }
+   25%
+   {
+    transform: translateX(120px);
+    }
+    50%
+    {
+    transform: translateX(0);
+   }
+   75%
+   {
+    transform: translateX(-120px);
+}
+100%
+{
+    transform: translateX(0);
+    color: #ac29f9;;
+   }
+}
+.yourname, .password
+{
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    background: transparent;
+    margin-bottom: 20px;
+    animation: yourname 1s linear infinite;
+}
+.yourname::placeholder, .password::placeholder{
+    color: white;
+}
+@keyframes yourname {
+    0%
+    {
+        border-top-color: red;
+    }
+    25%
+    {
+        border-right-color: green;
+    }
+    50%
+    {
+        border-bottom-color: yellow;
+    }
+    75%
+    {
+        border-left-color: violet;
+    }
+}
+.signin
+{
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px white solid;
+    background: transparent;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 900;
+    background: linear-gradient(to left, #ac29f9, #4aa4ff);
+    border: none;
+    animation: signin 5s linear infinite;
+    opacity: 0;
+}
+@keyframes signin {
+    50%
+    {
+        opacity: 1;
+        color: #ac29f9;
+    }
+    100%
+    {
+        color: dodgerblue;
+    }
+}
+.box__one_oneRectangle
+{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #ac29f9, #4aa4ff);
+    border-radius: 10px;
+    animation: Rectangle1 5s infinite linear;
+}
+@keyframes Rectangle1 {
+    50%
+    {
+        top: 50px;     
+    }
+}
+.box__one_twoRectangle
+{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #ac29f9, #4aa4ff);
+    border-radius: 10px;
+    animation: Rectangle2 5s infinite linear;
+}
+@keyframes Rectangle2 {
+    50%
+    {
+        bottom: 50px;
+    }
+}
+.circle
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background: #61dafb;
+    border-radius: 50%;
+
+    transform: scale(0);
+    opacity: 0.2;
+    animation: circle 1s linear infinite;
+}
+@keyframes circle {
+    to{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+.box__one_threeRectangle, .box__one_fourRectangle
+{
+    position: absolute;
+    bottom: 40px;
+    left: 75px;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 10px solid  #ac29f9;
+    border-radius: 10px;
+    animation: Rectangle3 15s linear infinite;
+}
+@keyframes Rectangle3 {
+    to{
+        transform: rotate(180deg);
+    }
+}
+.box__one_fourRectangle
+{
+    animation: Rectangle4 15s linear infinite;
+}
+@keyframes Rectangle4 {
+    to{
+        transform: rotate(-180deg);
+    }
+}
+.star__one
+{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 200px;
+    height: 200px;
+}
+.starblack
+{
+    animation: starblack 15s linear infinite;
+}
+@keyframes starblack {
+    0%{
+        border-left-color: black;
+        border-right-color: black;
+        border-bottom-color: black;
+        border-top-color: black;
+    }
+    25%{
+        border-left-color: yellow;
+        border-right-color: yellow;
+        border-bottom-color: yellow;
+        border-top-color: yellow;
+
+    }
+    50%{
+        border-left-color: dodgerblue;
+        border-right-color: dodgerblue;
+        border-bottom-color: dodgerblue;
+        border-top-color: dodgerblue;
+    }
+    75%{
+        border-left-color: red;
+        border-right-color: red;
+        border-bottom-color: red;
+        border-top-color: red;
+    }
+    100%{
+        border-left-color: blue;
+        border-right-color: blue;
+        border-bottom-color: blue;
+        border-top-color: blue;
+    }
+}
+.star1
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: 0;
+    border-left: 0;
+    animation: starblack 15s linear infinite;
+}
+.star2
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: 0;
+    border-right: 0;
+}
+.star3
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-right: 0;
+    border-bottom: 0;
+}
+.star4
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-bottom: 0;
+    border-left: 0;
+}
+.star5
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: 0;
+    border-left: 0;
+}
+.star6
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: 0;
+    border-right: 0;
+}
+.star7
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-bottom: 0;
+    border-right: 0;
+}
+.star8
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-bottom: 0;
+    border-left: 0;
+}
+.star__two
+{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+.star__one, .star__two
+{
+    animation: star__one .5s linear infinite;
+}
+@keyframes star__one {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    25%
+    {
+        transform: rotate(45deg);
+    }
+    50%
+    {
+        transform: rotate(90deg);
+    }
+    75%
+    {
+        transform: rotate(135eg);
+    }
+    100%
+    {
+        transform: rotate(180deg);
+    }
+}
+.star__two
+{
+    animation: star__two .5s linear infinite;
+}
+@keyframes star__two {
+    0%
+    {
+        transform: rotate(45deg);
+    }
+    25%
+    {
+        transform: rotate(90deg);
+    }
+    50%
+    {
+        transform: rotate(135deg);
+    }
+    75%
+    {
+        transform: rotate(180eg);
+    }
+    100%
+    {
+        transform: rotate(225deg);
+    }
+}
+/* .star1
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-right: none;
+    border-bottom: none;
+}
+.star2
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-bottom: none;
+    border-left: none;
+}
+.star3
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-left: none;
+    border-top: none;
+}
+.star4
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: none;
+    border-right: none;
+}
+.star5
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-right: none;
+    border-bottom: none;
+}
+.star6
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-left: none;
+    border-bottom: none;
+}
+.star7
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: none;
+    border-left: none;
+}
+.star8
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #ac29f9;
+    border-top: none;
+    border-right: none;
+} */
